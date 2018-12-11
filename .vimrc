@@ -281,4 +281,3 @@ autocmd FileType vim let b:vcm_tab_complete= 'omni'
 :inoremap <C-E> <C-X><C-E>
 :inoremap <C-Y> <C-X><C-Y>
 :inoremap <C-Z> <Esc><Esc>zza
-
