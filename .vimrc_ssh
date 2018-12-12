@@ -7,14 +7,14 @@ syntax on
 set backspace=indent,eol,start
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
 
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+"Plugin 'gmarik/Vundle.vim'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
@@ -33,7 +33,7 @@ set foldmethod=indent
 set foldlevel=99
 nnoremap <Leader>b za
 
-Plugin 'tmhedberg/SimpylFold'
+"Plugin 'tmhedberg/SimpylFold'
 
 au BufNewFile,BufRead *
       \ set tabstop=2 |
@@ -56,33 +56,33 @@ au BufNewFile,BufRead *.py
 au BufNewFile,BufRead *.js
       \ so ~/.vim/javascript.vim
 
-Plugin 'vim-scripts/indentpython.vim'
+"Plugin 'vim-scripts/indentpython.vim'
 
 set encoding=utf-8
 set showmatch
 
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 
-Plugin 'nvie/vim-flake8'
+"Plugin 'nvie/vim-flake8'
 
-let python_highlight_all=1
+"let python_highlight_all=1
 
 set number
 
-Plugin 'scrooloose/nerdtree'
+"Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+"call vundle#end()            " required
 filetype plugin indent on    " required
 
-let NERDTreeShowHidden=1
-let g:NERDTreeWinPos = 'left'
+"let NERDTreeShowHidden=1
+"let g:NERDTreeWinPos = 'left'
 
 " Toggle a nerdtree with ctrl-n
-nnoremap <C-n> :NERDTreeToggle<CR>
+"nnoremap <C-n> :NERDTreeToggle<CR>
 
 " Close vim if a nerdtree is the only thing open
-autocmd bufenter * if (winnr("$") == 3 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"autocmd bufenter * if (winnr("$") == 3 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 "set statusline+=%*
 
@@ -281,3 +281,4 @@ autocmd FileType vim let b:vcm_tab_complete= 'omni'
 :inoremap <C-E> <C-X><C-E>
 :inoremap <C-Y> <C-X><C-Y>
 :inoremap <C-Z> <Esc><Esc>zza
+
