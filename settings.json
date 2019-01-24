@@ -1,1 +1,61 @@
-/home/zac/.config/Code/User/settings.json
+{
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<CR>"],
+      "commands": [":nohlsearch"]
+    },
+    {
+      "before": ["<Leader>","f"],
+      "after": ["A"," ","{","<CR>"]
+    },
+    {
+      "before": ["<Leader>","O"],
+      "after": ["O","<Esc>","<Esc>"]
+    },
+    {
+      "before": ["<Leader>","o"],
+      "after": ["o","<Esc>","<Esc>"]
+    },
+    {
+      "before": [";"],
+      "after": [":"]
+    },
+    {
+      "before": [":"],
+      "after": [";"]
+    }
+  ],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j","k"],
+      "after": ["<Esc>","<Esc>"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>", "<space>"],
+      "after": ["<Esc>","<Esc>"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+	"editor.tabSize": 2,
+	"window.zoomLevel": 1,
+	"terminal.integrated.fontSize": 20,
+	"editor.lineNumbers": "relative"
+}
