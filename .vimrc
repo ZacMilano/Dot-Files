@@ -35,6 +35,12 @@ nnoremap <Leader>b za
 
 Plugin 'tmhedberg/SimpylFold'
 
+" ts
+Plugin 'leafgarland/typescript-vim'
+
+au BufNewFile,BufRead *.ts
+      \ set filetype=typescript
+
 au BufNewFile,BufRead *
       \ set tabstop=2 |
       \ set softtabstop=2 |
@@ -46,6 +52,9 @@ au BufNewFile,BufRead *
 
 au BufNewFile,BufRead *.todo
       \ so ~/.vim/todo.vim
+
+au BufNewFile,BufRead *.notes
+      \ so ~/.vim/notes.vim
 
 au BufNewFile,BufRead *.java
       \ so ~/.vim/java.vim
@@ -61,7 +70,7 @@ Plugin 'vim-scripts/indentpython.vim'
 set encoding=utf-8
 set showmatch
 
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 
 Plugin 'nvie/vim-flake8'
 

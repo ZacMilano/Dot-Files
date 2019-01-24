@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[00m\]:\[\033[01;35m\]\W\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\W\$ '
 fi
@@ -197,8 +197,22 @@ alias bu='xrandr --output eDP-1-1 --brightness $(xrandr --verbose | grep -m 1\
   ~/.currentbrightness ~/.upamt | paste -sd+ | bc)'
 export PYTHONSTARTUP=~/.pyrc
 
-alias a='cd ~/d/s/b351/final/a'
-alias s='cd ~/d/s/c212/g/hw/hw12'
+# alias a='cd ~/d/s/b351/final/a'
+# alias s='cd ~/d/s/c212/g/hw/hw12'
+alias c='cd ~/d/s/c343'
+alias b='cd ~/d/s/b455'
+
 
 export WALLPAPER=~/Pictures/mountains.jpg
 feh --bg-scale $WALLPAPER
+
+alias sched='xdg-open ~/p/sched_s19.png'
+
+alias left='xrandr --output HDMI-1-2 --auto && xrandr --output HDMI-1-2 --left-of eDP-1-1'
+alias none='xrandr --output HDMI-1-2 --off'
+
+alias vim=/usr/bin/vim.gtk
+
+alias gpo='git push origin'
+
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"

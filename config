@@ -254,7 +254,7 @@ bar {
       spotify.pause="LEFT_CLICK"\
     cpu.warning=60 cpu.critical=80 cpu.format=": {:.01f}%"\
     \
-  # -t solarized-powerline
+  # -t iceberg-rainbow
   # all themes https://github.com/tobi-wan-kenobi/bumblebee-status#examples
 
   colors {              # outline     bg        number
